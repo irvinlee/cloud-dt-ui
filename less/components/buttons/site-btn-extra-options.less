@@ -1,0 +1,20 @@
+@import '../../variables.less';
+
+.site-btn-extra-options {
+    &:before, &::after{
+        content: "";
+    }
+
+    span, &:before, &::after{
+        display: inline-block;
+        height: 4px;
+        width: 4px;
+        background-color: @darkGray;
+        border-radius: 50% 50%;
+        margin-right: 2px;
+    }
+
+    &::after {
+        margin-right: 0;
+    }
+}
