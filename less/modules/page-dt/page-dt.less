@@ -1,0 +1,32 @@
+@import '../../compiled-global-styles/global-styles.less';
+@import '../../variables.less';
+
+.cloud-dt-page {
+    font-family: "Open Sans", "Lato", sans-serif;
+    text-align: center;
+
+    .page-content {
+        // added because header is fixed positioned
+        padding-top: 56px;
+        background-color: @pageContentBgColor;
+        position: relative;
+    }
+
+    .inner-wrapper {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .canvas-wrapper {
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 88px);
+        transform: translate(-50%, -50%);
+        background-color: @canvasWrapperBgColor;
+        width: 784.64px;
+        height: 439.11px;
+        box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.08);
+        border: 1px solid @canvasWrapperBorderColor;
+    }
+}
