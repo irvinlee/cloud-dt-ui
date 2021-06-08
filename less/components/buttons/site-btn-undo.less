@@ -1,0 +1,10 @@
+.site-btn-undo {
+    &:extend(.site-btn-redo);
+    transform: scaleX(-1);
+
+    &:disabled {
+        opacity: 0.25;    
+    }
+}
+
+@import "./site-btn-redo.less";
