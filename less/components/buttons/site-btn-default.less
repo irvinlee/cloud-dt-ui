@@ -4,6 +4,11 @@
     &:extend(.site-btn-base);
     background-color: @btnDefaultBgColor;
     color: @btnDefaultFontColor;
+
+    &.active {
+        background-color: @btnActiveBgColor;
+        color: @btnActiveFontColor;
+    }
 }
 
 @import './site-btn-base.less';
