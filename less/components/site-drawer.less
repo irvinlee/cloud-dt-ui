@@ -1,0 +1,45 @@
+@import "../variables.less";
+
+.site-drawer {
+    position: absolute;
+    z-index: 998;
+    min-height: 100vh;
+    width: 0;
+    left: 100%;
+    top: 0;
+    transition: ease-in-out 0.15s width;
+    overflow: hidden;
+    padding-right: 22px;
+
+    &.open {
+        width: 350px;
+    }
+
+    .drawer-inner-wrapper {
+        overflow: visible;
+        background-color: @drawerBgColor;
+        box-shadow: inset 0px 0 6px rgba(0, 0, 0, 0.3);
+        padding: 26px 16px;
+        text-align: left;
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+
+        h2 {
+            font-size: 2.4rem;
+            line-height: 1em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .drawer-toggle {
+            position: absolute;
+            top: 50%;
+            right: -17px;
+            border: none;
+            background: url("/assets/drawer-toggle.svg") left top no-repeat;
+            height: 55.5px;
+            width: 22.64px;
+        }
+    }
+}
