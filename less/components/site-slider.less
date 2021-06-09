@@ -1,0 +1,32 @@
+.site-slider {
+    position: relative;
+    width: 100%;
+
+    .slider-handle {
+        height: 16px;
+        width: 16px;
+        background-color: @royalBlue;
+        border-radius: 50% 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .slider-line {
+        height: 3px;
+        position: absolute;
+        left: 0;
+    }
+
+    .slider-track {
+        z-index: 8;
+        width: 100%;
+        background-color: @gray;
+    }
+
+    .value-line {
+        z-index: 9;
+        background-color: @royalBlue;
+    }
+}
