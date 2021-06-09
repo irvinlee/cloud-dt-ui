@@ -10,17 +10,20 @@
     top: 0;
     transition: ease-in-out 0.15s width;
     overflow: hidden;
-    padding-right: 22px;
-
+    
     &.open {
         width: 354px;
+        padding-right: 22px;
+        
+        .drawer-inner-wrapper {
+            padding: 26px 16px;
+        }
     }
 
     .drawer-inner-wrapper {
         overflow: visible;
         background-color: @drawerBgColor;
-        box-shadow: inset 0px 0 4px rgba(0, 0, 0, 0.3), 0px 0 2px rgba(0, 0, 0, 0.3);
-        padding: 26px 16px;
+        box-shadow: inset 0px 0 4px rgba(0, 0, 0, 0.3), 0px 0 2px rgba(0, 0, 0, 0.3);        
         text-align: left;
         position: relative;
         min-height: 100vh;
