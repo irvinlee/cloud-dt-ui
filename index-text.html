@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tool</title>
+    <link rel="stylesheet" href="/css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="/css/global-styles/global-styles.css" />
+</head>
+<body class="cloud-dt-page">
+    <header>
+        <div class="inner-wrapper">
+            <div class="left">
+                <a class="brand" href="/">
+                    <img src="/assets/uprinting-logo.svg" alt="UPrinting" />
+                </a>
+            </div>
+            <div class="right">                
+                <button class="site-btn-default site-btn-save">Save / Load Design</button>
+                <button class="site-btn-default site-btn-download">Download</button>
+                <button class="site-btn-default site-btn-share">Share</button>
+                <button class="site-btn-primary">Continue</button>
+                <button class="site-btn-default site-btn-extra-options"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="inner-wrapper">
+            <div class="left-nav">
+                <a class="menu-item templates">Templates</a>
+                <a class="menu-item logo">Logo</a>
+                <a class="menu-item files">Files</a>
+                <a class="menu-item text active">Text</a>
+                <a class="menu-item elements">Elements</a>
+                <a class="menu-item background">Background</a>
+                <hr />
+                <div class="undo-redo">
+                    <button class="site-btn-undo" disabled></button>
+                    <button class="site-btn-redo"></button>
+                </div>
+
+                <div class="site-drawer open">
+                    <div class="drawer-inner-wrapper">
+                        <h2>Text</h2>
+                        <button class="drawer-toggle"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-wrapper">
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" href="/css_min/modules/page-dt/page-dt-mobile.min.css" />
+</body>
+</html>
