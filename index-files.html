@@ -7,6 +7,7 @@
     <title>Design Tool</title>
     <link rel="stylesheet" href="/css/custom-bootstrap.css" />
     <link rel="stylesheet" href="/css/global-styles/global-styles.css" />
+    <link rel="stylesheet" href="/css/spritesheet.css" />
 </head>
 <body class="cloud-dt-page">
     <header>
@@ -17,9 +18,16 @@
                 </a>
             </div>
             <div class="right">                
-                <button class="site-btn-default site-btn-save">Save / Load Design</button>
-                <button class="site-btn-default site-btn-download">Download</button>
-                <button class="site-btn-default site-btn-share">Share</button>
+                <button class="site-btn-default site-top-nav-button">
+                    <i class="icon-save"></i>Save / Load Design
+                </button>
+                <button class="site-btn-default site-top-nav-button">
+                    <i class="icon-download"></i>Save / Load Design
+                    Download
+                </button>
+                <button class="site-btn-default site-top-nav-button">
+                    <i class="icon-share"></i>Share
+                </button>
                 <button class="site-btn-primary">Continue</button>
                 <button class="site-btn-default site-btn-extra-options"><span></span></button>
             </div>
@@ -28,16 +36,44 @@
     <div class="page-content">
         <div class="inner-wrapper">
             <div class="left-nav">
-                <a class="menu-item templates">Templates</a>
-                <a class="menu-item logo">Logo</a>
-                <a class="menu-item files active">Files</a>
-                <a class="menu-item text">Text</a>
-                <a class="menu-item elements">Elements</a>
-                <a class="menu-item background">Background</a>
+                <a class="menu-item templates">
+                    <i class="icon-templates"></i>
+                    <i class="icon-templates-active active-icon"></i>
+                    Templates
+                </a>
+                <a class="menu-item logo">
+                    <i class="icon-logo"></i>
+                    <i class="icon-logo-active active-icon"></i>
+                    Logo
+                </a>
+                <a class="menu-item files active">
+                    <i class="icon-files"></i>
+                    <i class="icon-files-active active-icon"></i>
+                    Files
+                </a>
+                <a class="menu-item text">
+                    <i class="icon-text"></i>
+                    <i class="icon-text-active active-icon"></i>
+                    Text
+                </a>
+                <a class="menu-item elements">
+                    <i class="icon-elements"></i>
+                    <i class="icon-elements-active active-icon"></i>
+                    Elements
+                </a>
+                <a class="menu-item background">
+                    <i class="icon-background"></i>
+                    <i class="icon-background-active active-icon"></i>
+                    Background
+                </a>
                 <hr />
                 <div class="undo-redo">
-                    <button class="site-btn-undo" disabled></button>
-                    <button class="site-btn-redo"></button>
+                    <button class="site-btn-undo" disabled>
+                        <i class="icon-undo-redo"></i>
+                    </button>
+                    <button class="site-btn-redo">
+                        <i class="icon-undo-redo"></i>
+                    </button>
                 </div>
 
                 <div class="site-drawer open">
@@ -57,9 +93,15 @@
                                 </div>
                                 <div class="site-dynamic-photo-grid">
                                     <div class="selected">
+                                        <div class="selected-indicator">
+                                            <i class="icon-check"></i>
+                                        </div>
                                         <img src="/assets/files/1.png" alt="" />
                                     </div>
                                     <div class="selected">
+                                        <div class="selected-indicator">
+                                            <i class="icon-check"></i>
+                                        </div>
                                         <img src="/assets/files/2.png" alt="" />
                                     </div>
                                     <div>

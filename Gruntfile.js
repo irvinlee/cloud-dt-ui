@@ -36,9 +36,18 @@ module.exports = function (grunt) {
                     nospawn: true
                 }
             }
+        },
+        sprite:{
+            all: {
+                src: 'assets/sprites/*.png',
+                dest: 'assets/spritesheet.png',
+                destCss: 'css/spritesheet.css'
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-spritesmith');
+    
     grunt.registerTask('createDirectories', function () {
         grunt.file.mkdir('css_min/modules/page-dt');
     });

@@ -1,6 +1,7 @@
 @import "../../variables.less";
 
 .site-btn-default {
+    position: relative;
     &:extend(.site-btn-base);
     background-color: @btnDefaultBgColor;
     color: @btnDefaultFontColor;
@@ -8,6 +9,14 @@
     &.active {
         background-color: @btnActiveBgColor;
         color: @btnActiveFontColor;
+    }
+
+    i {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        transform: translateY(-50%);
     }
 }
 

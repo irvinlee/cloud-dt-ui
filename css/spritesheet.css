@@ -1,0 +1,192 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-add-image {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -24px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-background-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -24px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-background {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -48px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-bring-forward {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -120px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-bring-to-front {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -120px -22px;
+  width: 22px;
+  height: 22px;
+}
+.icon-check {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px -55px;
+  width: 16px;
+  height: 14px;
+}
+.icon-chevron-right {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px -85px;
+  width: 8px;
+  height: 15px;
+}
+.icon-crop {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -120px -44px;
+  width: 22px;
+  height: 22px;
+}
+.icon-delete {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -48px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-download {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px -69px;
+  width: 14px;
+  height: 16px;
+}
+.icon-drawer-toggle {
+  background-image: url(../assets/spritesheet.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 57px;
+}
+.icon-duplicate {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -72px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-elements-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -72px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-elements {
+  background-image: url(../assets/spritesheet.png);
+  background-position: 0px -57px;
+  width: 24px;
+  height: 24px;
+}
+.icon-files-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -22px -81px;
+  width: 24px;
+  height: 21px;
+}
+.icon-files {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -46px -81px;
+  width: 24px;
+  height: 21px;
+}
+.icon-lock {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px 0px;
+  width: 16px;
+  height: 23px;
+}
+.icon-logo-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -24px -57px;
+  width: 24px;
+  height: 24px;
+}
+.icon-logo {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -48px -57px;
+  width: 24px;
+  height: 24px;
+}
+.icon-rotate {
+  background-image: url(../assets/spritesheet.png);
+  background-position: 0px -81px;
+  width: 22px;
+  height: 23px;
+}
+.icon-save {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px -23px;
+  width: 16px;
+  height: 16px;
+}
+.icon-send-backward {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -120px -66px;
+  width: 22px;
+  height: 22px;
+}
+.icon-send-to-back {
+  background-image: url(../assets/spritesheet.png);
+  background-position: 0px -104px;
+  width: 22px;
+  height: 22px;
+}
+.icon-share {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -142px -39px;
+  width: 16px;
+  height: 16px;
+}
+.icon-templates-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -96px -24px;
+  width: 22px;
+  height: 24px;
+}
+.icon-templates {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -96px -48px;
+  width: 22px;
+  height: 24px;
+}
+.icon-text-active {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -72px -57px;
+  width: 24px;
+  height: 24px;
+}
+.icon-text {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -96px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-undo-redo {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -70px -81px;
+  width: 22px;
+  height: 20px;
+}
