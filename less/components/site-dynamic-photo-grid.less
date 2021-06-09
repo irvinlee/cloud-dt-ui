@@ -1,0 +1,31 @@
+.site-dynamic-photo-grid {
+    line-height: 0;
+
+    -webkit-column-count: 2;
+    -webkit-column-gap: 6px;
+    -moz-column-count: 2;
+    -moz-column-gap: 6px;
+    column-count: 2;
+    column-gap: 6px; 
+
+    > div {
+        display: inline-block;
+        margin-bottom: 6px;
+        position: relative;
+
+        &.selected {
+            border: 3px solid @green;
+
+            &:before {
+                content: "";
+                background: url("/assets/check.png") center center no-repeat @green;
+                height: 24px;
+                width: 24px;
+                border-radius: 50% 50%;
+                position: absolute;
+                top: 4px;
+                right: 11px;
+            }
+        }
+    }
+}
