@@ -9,8 +9,8 @@ To run the development server, please do the following:
 
 1. Install http-server by running `npm install -g http-server`
 2. Install the dependencies using `npm install`
-3. Compile the CSS by running `grunt`
-    3-a. Generate the spritesheet by running `grunt sprite`
-4. Run the server running `http-server`
-5. You can then view the page at `http://localhost:8080`
+3. Generate the spritesheet by running `grunt sprite`
+4. Compile the CSS by running `grunt`
+5. Run the server running `http-server`
+6. You can then view the page at `http://localhost:8080`
 
