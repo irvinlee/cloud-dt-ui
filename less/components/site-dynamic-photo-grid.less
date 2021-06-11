@@ -2,6 +2,13 @@
     line-height: 0;
     display: grid;
     grid-template-columns: 50% 50%;
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     > div {
         display: inline-block;
