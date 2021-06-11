@@ -18,79 +18,85 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-add-image {
   background-image: url(../assets/spritesheet.png);
-  background-position: -122px -65px;
+  background-position: -60px -31px;
   width: 24px;
   height: 24px;
 }
 .icon-align-center {
   background-image: url(../assets/spritesheet.png);
-  background-position: -60px -57px;
+  background-position: -91px 0px;
   width: 31px;
   height: 28px;
 }
 .icon-align-justified {
   background-image: url(../assets/spritesheet.png);
-  background-position: -91px 0px;
+  background-position: -91px -28px;
   width: 31px;
   height: 28px;
 }
 .icon-align-left {
   background-image: url(../assets/spritesheet.png);
-  background-position: -91px -28px;
+  background-position: -91px -56px;
   width: 31px;
   height: 28px;
 }
 .icon-align-right {
   background-image: url(../assets/spritesheet.png);
-  background-position: -91px -56px;
+  background-position: 0px -88px;
   width: 31px;
   height: 28px;
 }
 .icon-background-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -122px -89px;
+  background-position: -31px -88px;
   width: 24px;
   height: 24px;
 }
 .icon-background {
   background-image: url(../assets/spritesheet.png);
-  background-position: -60px -31px;
+  background-position: -55px -88px;
   width: 24px;
   height: 24px;
 }
 .icon-bring-forward {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px -47px;
+  background-position: 0px -140px;
   width: 22px;
   height: 22px;
 }
 .icon-bring-to-front {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px -69px;
+  background-position: -22px -140px;
   width: 22px;
   height: 22px;
 }
+.icon-burger {
+  background-image: url(../assets/spritesheet.png);
+  background-position: -60px -57px;
+  width: 30px;
+  height: 30px;
+}
 .icon-check {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -109px;
+  background-position: -173px 0px;
   width: 16px;
   height: 14px;
 }
 .icon-chevron-down {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -97px;
+  background-position: -148px -140px;
   width: 19px;
   height: 12px;
 }
 .icon-chevron-right {
   background-image: url(../assets/spritesheet.png);
-  background-position: -182px -123px;
+  background-position: -173px -43px;
   width: 8px;
   height: 15px;
 }
 .icon-collapse {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -152px;
+  background-position: -173px -58px;
   width: 12px;
   height: 3px;
 }
@@ -102,19 +108,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-crop {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px -91px;
+  background-position: -44px -140px;
   width: 22px;
   height: 22px;
 }
 .icon-delete {
   background-image: url(../assets/spritesheet.png);
-  background-position: -27px -88px;
+  background-position: -79px -88px;
   width: 24px;
   height: 24px;
 }
 .icon-download {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -123px;
+  background-position: -173px -14px;
   width: 14px;
   height: 16px;
 }
@@ -126,139 +132,139 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-duplicate {
   background-image: url(../assets/spritesheet.png);
-  background-position: -51px -88px;
+  background-position: 0px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-elements-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -75px -88px;
+  background-position: -24px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-elements {
   background-image: url(../assets/spritesheet.png);
-  background-position: 0px -120px;
+  background-position: -48px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-expand {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -139px;
+  background-position: -173px -30px;
   width: 12px;
   height: 13px;
 }
 .icon-files-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -24px -36px;
+  background-position: -149px -119px;
   width: 24px;
   height: 21px;
 }
 .icon-files {
   background-image: url(../assets/spritesheet.png);
-  background-position: 0px -144px;
+  background-position: -24px -36px;
   width: 24px;
   height: 21px;
 }
 .icon-lock {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -42px;
+  background-position: -103px -88px;
   width: 16px;
   height: 23px;
 }
 .icon-logo-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -24px -120px;
+  background-position: -72px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-logo {
   background-image: url(../assets/spritesheet.png);
-  background-position: -48px -120px;
+  background-position: -96px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-rotate {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px -24px;
+  background-position: -149px -96px;
   width: 22px;
   height: 23px;
 }
 .icon-save {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -65px;
+  background-position: -122px -97px;
   width: 16px;
   height: 16px;
 }
 .icon-search {
   background-image: url(../assets/spritesheet.png);
-  background-position: -72px -120px;
+  background-position: -120px -116px;
   width: 24px;
   height: 24px;
 }
 .icon-send-backward {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px -113px;
+  background-position: -66px -140px;
   width: 22px;
   height: 22px;
 }
 .icon-send-to-back {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px 0px;
+  background-position: -88px -140px;
   width: 22px;
   height: 22px;
 }
 .icon-share {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -81px;
+  background-position: -132px -140px;
   width: 16px;
   height: 16px;
 }
 .icon-templates-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -99px -88px;
+  background-position: -149px -48px;
   width: 22px;
   height: 24px;
 }
 .icon-templates {
   background-image: url(../assets/spritesheet.png);
-  background-position: -146px 0px;
+  background-position: -149px -72px;
   width: 22px;
   height: 24px;
 }
 .icon-text-active {
   background-image: url(../assets/spritesheet.png);
-  background-position: -96px -120px;
+  background-position: -149px 0px;
   width: 24px;
   height: 24px;
 }
 .icon-text-bold {
   background-image: url(../assets/spritesheet.png);
-  background-position: -122px 0px;
+  background-position: -122px -32px;
   width: 24px;
   height: 33px;
 }
 .icon-text-italic {
   background-image: url(../assets/spritesheet.png);
-  background-position: -122px -33px;
+  background-position: -122px -65px;
   width: 20px;
   height: 32px;
 }
 .icon-text-underline {
   background-image: url(../assets/spritesheet.png);
-  background-position: 0px -88px;
+  background-position: -122px 0px;
   width: 27px;
   height: 32px;
 }
 .icon-text {
   background-image: url(../assets/spritesheet.png);
-  background-position: -120px -120px;
+  background-position: -149px -24px;
   width: 24px;
   height: 24px;
 }
 .icon-undo-redo {
   background-image: url(../assets/spritesheet.png);
-  background-position: -168px -22px;
+  background-position: -110px -140px;
   width: 22px;
   height: 20px;
 }

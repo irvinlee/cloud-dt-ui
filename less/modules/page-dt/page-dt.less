@@ -10,7 +10,7 @@
         padding-top: 56px;
         background-color: @pageContentBgColor;
         position: relative;
-        height: 200vh;
+        height: 120vh;
     }
 
     .inner-wrapper {
@@ -18,13 +18,15 @@
         height: 100%;
         max-width: 1920px;
         margin: 0 auto;
+        display: flex;
+    }
+
+    .content-section {
+        padding: 59px 0 59px 88px;
+        max-width: calc(100% - 88px);
     }
 
     .canvas-wrapper {
-        position: absolute;
-        top: 50%;
-        left: calc(50% + 88px);
-        transform: translate(-50%, -50%);
         background-color: @canvasWrapperBgColor;
         width: 784.64px;
         height: 439.11px;
@@ -141,3 +143,5 @@
         }
     }
 }
+
+@import "./page-dt-mobile.less";
