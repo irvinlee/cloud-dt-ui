@@ -1,17 +1,16 @@
 .site-dynamic-photo-grid {
     line-height: 0;
-
-    -webkit-column-count: 2;
-    -webkit-column-gap: 6px;
-    -moz-column-count: 2;
-    -moz-column-gap: 6px;
-    column-count: 2;
-    column-gap: 6px; 
+    display: grid;
+    grid-template-columns: 50% 50%;
 
     > div {
         display: inline-block;
         margin-bottom: 6px;
         position: relative;
+
+        img {
+            max-width: 100%;
+        }
 
         .selected-indicator {
             height: 24px;
