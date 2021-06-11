@@ -1,13 +1,16 @@
 @import "../variables.less";
 
 .site-drawer {
-    position: relative;
+    position: absolute;
+    z-index: 998;
     min-height: 100vh;
+    height: 100%;
     width: 0;
+    left: 100%;
+    top: 0;
     transition: ease-in-out 0.15s width;
     overflow: hidden;
-    z-index: 998;
-
+    
     &.open {
         width: 354px;
         padding-right: 22px;
@@ -38,11 +41,11 @@
         .drawer-toggle {
             position: absolute;
             top: 50%;
-            right: -15px;
+            right: -12px;
             border: none;
             background-color: transparent;
             height: 55.5px;
-            width: 25.64px;
+            width: 22.64px;
             outline: none !important;
         }
     }
