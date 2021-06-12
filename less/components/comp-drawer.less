@@ -3,9 +3,8 @@
 .comp-drawer {
     position: absolute;
     z-index: 998;
-    min-height: 100vh;
-    height: 100%;
     width: 0;
+    height: 100%;
     left: 100%;
     top: 0;
     transition: ease-in-out 0.15s width;
@@ -26,7 +25,6 @@
         box-shadow: inset 0px 0 4px rgba(0, 0, 0, 0.3), 0px 0 2px rgba(0, 0, 0, 0.3);        
         text-align: left;
         position: relative;
-        min-height: 100vh;
         width: 100%;
         height: 100%;
 
@@ -41,12 +39,12 @@
         .drawer-toggle {
             position: absolute;
             top: 50%;
-            right: -12px;
+            right: -18px;
             border: none;
-            background-color: transparent;
             height: 55.5px;
             width: 22.64px;
             outline: none !important;
+            background: url('/assets/drawer-toggle.svg') center center no-repeat transparent;
         }
     }
 }
