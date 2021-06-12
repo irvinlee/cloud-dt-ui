@@ -13,6 +13,13 @@
     position: relative;
     overflow: visible;
 
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
     hr {
         background: rgba(255, 255, 255, 0.5);
         height: 1px;
@@ -36,19 +43,10 @@
         background-color: transparent;
         color: @leftNavMenuItemTextColor;
         cursor: pointer;
-        font-size: 1.2rem;
-        
-        i {
-            display: inline-block;
-            position: absolute;
-            left: 50%;
-            top: 25px;
-            transform: translateX(-50%);
-
-            &.active-icon {
-                display: none;
-            }
-        }
+        font-size: 12px;
+        line-height: 16.34px;
+        font-weight: 600;        
+        background-repeat: no-repeat;
 
         &.active {
             i{
@@ -60,6 +58,36 @@
             }
         }
 
+        &.templates {
+            background-image: url("/assets/templates.svg");
+            background-position: center 24px;
+        }
+
+        &.logo {
+            background-image: url("/assets/logo.svg");
+            background-position: center 24px;
+        }
+
+        &.files {
+            background-image: url("/assets/files.svg");
+            background-position: center 24px;
+        }
+
+        &.text {
+            background-image: url("/assets/text.svg");
+            background-position: center 24px;
+        }
+
+        &.elements {
+            background-image: url("/assets/elements.svg");
+            background-position: center 24px;
+        }
+
+        &.background {
+            background-image: url("/assets/background.svg");
+            background-position: center 24px;
+        }
+
         &:focus, &:hover {
             color: @leftNavMenuItemTextColor;
         }
@@ -67,6 +95,30 @@
         &.active {
             background-color: white;
             color: @leftNavMenuItemActiveTextColor;
+
+            &.templates {
+                background-image: url("/assets/templates-active.svg");
+            }
+    
+            &.logo {
+                background-image: url("/assets/logo-active.svg");
+            }
+    
+            &.files {
+                background-image: url("/assets/files-active.svg");
+            }
+    
+            &.text {
+                background-image: url("/assets/text-active.svg");
+            }
+    
+            &.elements {
+                background-image: url("/assets/elements-active.svg");
+            }
+    
+            &.background {
+                background-image: url("/assets/background-active.svg");
+            }
         }
     }
 }
