@@ -15,3 +15,7 @@ i {
 div, header, section {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
