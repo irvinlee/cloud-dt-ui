@@ -9,6 +9,7 @@
         background-color: @pageContentBgColor;
         position: relative;
         height: calc(100% - @headerHeight);
+        min-height: 720px;
     }
 
     .inner-wrapper {
@@ -22,6 +23,7 @@
 
     .workspace-section {
         padding: 59px 0 59px 88px;
+        position: relative;
     }
 
     .canvas-wrapper {
@@ -30,6 +32,10 @@
         height: 439.11px;
         box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.08);
         border: 1px solid @canvasWrapperBorderColor;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .option-list-section {
