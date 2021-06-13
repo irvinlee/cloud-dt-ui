@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Tool</title>
     <link rel="stylesheet" href="/css/global-styles/global-styles.css" />
-    <link rel="stylesheet" href="/css/spritesheet.css" />
 </head>
 <body class="page-cloud-dt">
     <header>
@@ -17,27 +16,41 @@
                 </a>
             </div>
             <div class="right">
-                <div class="desktop-menu">
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-save"></i>Save / Load Design
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-download"></i>Download
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-share"></i>Share
-                    </button>
-                    <button class="site-btn-primary">Continue</button>
-                    <button class="site-btn-default site-btn-extra-options"><span></span></button>
-                </div>
-                <div class="mobile-menu">
-                    <button class="burger-menu-toggle">
-                        <i class="icon-burger"></i>
-                    </button>
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu open">
+                    <button class="burger-menu-toggle"></button>
                     <div class="mobile-menu-dropdown">
                         <ul>
                             <li>
-                                <button>
+                                <button class="site-btn-save">
                                     Save / Load Design
                                 </button>
                             </li>
@@ -65,45 +78,51 @@
     <div class="page-content">
         <div class="inner-wrapper">
             <div class="left-nav">
-                <a class="menu-item templates">
-                    <i class="icon-templates"></i>
-                    <i class="icon-templates-active active-icon"></i>
-                    Templates
-                </a>
-                <a class="menu-item logo active">
-                    <i class="icon-logo"></i>
-                    <i class="icon-logo-active active-icon"></i>
-                    Logo
-                </a>
-                <a class="menu-item files">
-                    <i class="icon-files"></i>
-                    <i class="icon-files-active active-icon"></i>
-                    Files
-                </a>
-                <a class="menu-item text">
-                    <i class="icon-text"></i>
-                    <i class="icon-text-active active-icon"></i>
-                    Text
-                </a>
-                <a class="menu-item elements">
-                    <i class="icon-elements"></i>
-                    <i class="icon-elements-active active-icon"></i>
-                    Elements
-                </a>
-                <a class="menu-item background">
-                    <i class="icon-background"></i>
-                    <i class="icon-background-active active-icon"></i>
-                    Background
-                </a>
-                <hr />
-                <div class="undo-redo">
-                    <button class="site-btn-undo" disabled>
-                        <i class="icon-undo-redo"></i>
-                    </button>
-                    <button class="site-btn-redo">
-                        <i class="icon-undo-redo"></i>
-                    </button>
-                </div>
+                <ul class="menu-item-list">
+                    <li>
+                        <a class="menu-item templates" href="/index-templates.html">
+                            Templates
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item logo active" href="/index-logo.html">
+                            Logo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item files" href="/index-files.html">
+                            Files
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item text" href="/index-text.html">
+                            Text
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item elements" href="/index-elements.html">
+                            Elements
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item background" href="/index-background.html">
+                            Background
+                        </a>
+                    </li>
+                    <li>
+                        <hr />
+                    </li>
+                    <li>
+                        <div class="undo-redo">
+                            <button class="site-btn-undo" disabled>
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                            <button class="site-btn-redo">
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
 
                 <div class="comp-drawer open">
                     <div class="drawer-inner-wrapper">
@@ -114,7 +133,7 @@
                                 <button class="site-btn-large">Open Logo Designer</button>
                             </section>
                             <hr />
-                            <section class="logo-option-buttons">                                
+                            <section class="logo-option-link">                                
                                 <button class="site-btn-link" disabled>Edit Logo</button>                            
                                 <button class="site-btn-link">Delete Logo</button>
                             </section>

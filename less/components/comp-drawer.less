@@ -2,7 +2,7 @@
 
 .comp-drawer {
     position: absolute;
-    z-index: 998;
+    z-index: 997;
     width: 0;
     height: 100%;
     left: 100%;
@@ -22,18 +22,17 @@
     .drawer-inner-wrapper {
         overflow: visible;
         background-color: @drawerBgColor;
-        box-shadow: inset 0px 0 4px rgba(0, 0, 0, 0.3), 0px 0 2px rgba(0, 0, 0, 0.3);        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-align: left;
         position: relative;
         width: 100%;
         height: 100%;
 
         h2 {
-            font-size: 2.4rem;
-            line-height: 1em;
-            font-weight: 700;
-            margin: 0;
-            padding-bottom: 2.4rem;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 100%;
         }
 
         .drawer-toggle {
