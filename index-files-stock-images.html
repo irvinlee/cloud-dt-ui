@@ -17,27 +17,41 @@
                 </a>
             </div>
             <div class="right">
-                <div class="desktop-menu">
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-save"></i>Save / Load Design
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-download"></i>Download
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-share"></i>Share
-                    </button>
-                    <button class="site-btn-primary">Continue</button>
-                    <button class="site-btn-default site-btn-extra-options"><span></span></button>
-                </div>
-                <div class="mobile-menu">
-                    <button class="burger-menu-toggle">
-                        <i class="icon-burger"></i>
-                    </button>
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu open">
+                    <button class="burger-menu-toggle"></button>
                     <div class="mobile-menu-dropdown">
                         <ul>
                             <li>
-                                <button>
+                                <button class="site-btn-save">
                                     Save / Load Design
                                 </button>
                             </li>
@@ -72,12 +86,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item logo active" href="/index-logo.html">
+                        <a class="menu-item logo" href="/index-logo.html">
                             Logo
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item files" href="/index-files.html">
+                        <a class="menu-item files active" href="/index-files.html">
                             Files
                         </a>
                     </li>
@@ -117,8 +131,14 @@
                         <section class="files-options-section">
                             <div class="comp-tabbed-pane">
                                 <div class="tabbed-pane-header">
-                                    <button class="tab-option">Your File</button>
-                                    <button class="tab-option active">Stock Images</button>
+                                    <ul class="tab-items">
+                                        <li>
+                                            <a class="tab-option" href="/index-files.html">Your File</a>
+                                        </li>
+                                        <li>
+                                            <a class="tab-option active">Stock Images</a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="tabbed-pane-body">
                                     <div class="stock-images-pane-contents">
@@ -130,38 +150,98 @@
                                             <i class="icon-search"></i>
                                         </div>
                                         <h4>Popular Searches</h4>
-                                        <div class="popular-search-list">
-                                            <a href="">wedding</a>
-                                            <a href="">flowers</a>
-                                            <a href="">real estate</a>
-                                            <a href="">christmas</a>
-                                            <a href="">music</a>
-                                            <a href="">construction</a>
-                                            <a href="">background</a>
-                                            <a href="">Beach</a>
-                                            <a href="">heart</a>
-                                            <a href="">tree</a>
-                                            <a href="">Birthday</a>
-                                            <a href="">spa</a>
-                                            <a href="">hair</a>
-                                            <a href="">house</a>
-                                            <a href="">beauty</a>
-                                            <a href="">massage</a>
-                                            <a href="">wine</a>
-                                            <a href="">fitness</a>
-                                            <a href="">car</a>
-                                            <a href="">love</a>
-                                            <a href="">graduation</a>
-                                            <a href="">business</a>
-                                            <a href="">jewelry</a>
-                                            <a href="">computer</a>
-                                            <a href="">fashion</a>
-                                            <a href="">medical</a>
-                                            <a href="">chruch</a>
-                                            <a href="">landscaping</a>
-                                            <a href="">books</a>
-                                            <a href="">money</a>
-                                        </div>
+                                        <ul class="popular-search-list">
+                                            <li>
+                                                <a href="">wedding</a>
+                                            </li>
+                                            <li>
+                                                <a href="">flowers</a>
+                                            </li>
+                                            <li>
+                                                <a href="">real estate</a>
+                                            </li>
+                                            <li>
+                                                <a href="">christmas</a>
+                                            </li>
+                                            <li>
+                                                <a href="">music</a>
+                                            </li>
+                                            <li>
+                                                <a href="">construction</a>
+                                            </li>
+                                            <li>
+                                                <a href="">background</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Beach</a>
+                                            </li>
+                                            <li>
+                                                <a href="">heart</a>
+                                            </li>
+                                            <li>
+                                                <a href="">tree</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Birthday</a>
+                                            </li>
+                                            <li>
+                                                <a href="">spa</a>
+                                            </li>
+                                            <li>
+                                                <a href="">hair</a>
+                                            </li>
+                                            <li>
+                                                <a href="">house</a>
+                                            </li>
+                                            <li>
+                                                <a href="">beauty</a>
+                                            </li>
+                                            <li>
+                                                <a href="">massage</a>
+                                            </li>
+                                            <li>
+                                                <a href="">wine</a>
+                                            </li>
+                                            <li>
+                                                <a href="">fitness</a>
+                                            </li>
+                                            <li>
+                                                <a href="">car</a>
+                                            </li>
+                                            <li>
+                                                <a href="">love</a>
+                                            </li>
+                                            <li>
+                                                <a href="">graduation</a>
+                                            </li>
+                                            <li>
+                                                <a href="">business</a>
+                                            </li>
+                                            <li>
+                                                <a href="">jewelry</a>
+                                            </li>
+                                            <li>
+                                                <a href="">computer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">fashion</a>
+                                            </li>
+                                            <li>
+                                                <a href="">medical</a>
+                                            </li>
+                                            <li>
+                                                <a href="">chruch</a>
+                                            </li>
+                                            <li>
+                                                <a href="">landscaping</a>
+                                            </li>
+                                            <li>
+                                                <a href="">books</a>
+                                            </li>
+                                            <li>
+                                                <a href="">money</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -178,6 +258,7 @@
             </section>
         </div>
     </div>
-    <link rel="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" media="(max-width: 991px)" href="/css_min/modules/page-dt/page-dt-mobile.min.css" />
 </body>
 </html>

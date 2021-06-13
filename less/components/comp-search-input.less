@@ -3,13 +3,21 @@
     border: @gray 1px solid;
     position: relative;
     padding: 8px;
-    
+    background: url('/assets/search.svg') calc(100% - 8.53px) center no-repeat transparent;
+
     input {
         border: none;
         outline: none !important;
         line-height: 19px;
         font-size: 16px;
-        color: @gray3;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: @inputFontFamily;
+        
+        &::placeholder {
+            color: @gray3;
+        }
     }
 
     i {

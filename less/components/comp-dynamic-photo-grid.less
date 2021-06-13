@@ -1,8 +1,9 @@
 .comp-dynamic-photo-grid {
-    line-height: 0;
     display: grid;
-    grid-template-columns: 50% 50%;
-    max-height: 400px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+    grid-auto-flow: row dense;
+    max-height: 420px;
     overflow-y: scroll;
     scrollbar-width: none;
     
@@ -10,33 +11,27 @@
         display: none;
     }
 
-    > div {
-        display: inline-block;
-        margin-bottom: 6px;
+    > li {
+        margin-bottom: 5.08px;
         position: relative;
+        border: 3px solid transparent;
 
         img {
             max-width: 100%;
-        }
-
-        .selected-indicator {
-            height: 24px;
-            width: 24px;
-            border-radius: 50% 50%;
-            position: absolute;
-            top: 4px;
-            right: 11px;
-            background-color: @green;
-            display: none;
+            display: block;
         }
 
         &.selected {
-            border: 3px solid @green;
-
-            .selected-indicator {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            border-color: @green;
+            &:before {
+                content: "";
+                height: 24px;
+                width: 24px;
+                border-radius: 50% 50%;
+                position: absolute;
+                top: 4px;
+                right: 11px;
+                background: url('/assets/check.svg') center center no-repeat @green;
             }
         }
     }

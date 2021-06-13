@@ -17,27 +17,41 @@
                 </a>
             </div>
             <div class="right">
-                <div class="desktop-menu">
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-save"></i>Save / Load Design
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-download"></i>Download
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-share"></i>Share
-                    </button>
-                    <button class="site-btn-primary">Continue</button>
-                    <button class="site-btn-default site-btn-extra-options"><span></span></button>
-                </div>
-                <div class="mobile-menu">
-                    <button class="burger-menu-toggle">
-                        <i class="icon-burger"></i>
-                    </button>
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu open">
+                    <button class="burger-menu-toggle"></button>
                     <div class="mobile-menu-dropdown">
                         <ul>
                             <li>
-                                <button>
+                                <button class="site-btn-save">
                                     Save / Load Design
                                 </button>
                             </li>
@@ -72,12 +86,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item logo active" href="/index-logo.html">
+                        <a class="menu-item logo" href="/index-logo.html">
                             Logo
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item files" href="/index-files.html">
+                        <a class="menu-item files active" href="/index-files.html">
                             Files
                         </a>
                     </li>
@@ -117,8 +131,14 @@
                         <section class="files-options-section">
                             <div class="comp-tabbed-pane">
                                 <div class="tabbed-pane-header">
-                                    <button class="tab-option active">Your File</button>
-                                    <button class="tab-option">Stock Images</button>
+                                    <ul class="tab-items">
+                                        <li>
+                                            <a class="tab-option active">Your File</a>
+                                        </li>
+                                        <li>
+                                            <a class="tab-option" href="/index-files-stock-images.html">Stock Images</a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="tabbed-pane-body">
                                     <button class="site-btn-large">Upload Your File</button>
@@ -126,23 +146,17 @@
                                         We accept JPEG, PNG, PDF, GIF. <br />Max file size: 20MB
                                     </p>
                                 </div>
-                                <div class="comp-dynamic-photo-grid">
-                                    <div class="selected">
-                                        <div class="selected-indicator">
-                                            <i class="icon-check"></i>
-                                        </div>
+                                <ul class="comp-dynamic-photo-grid">
+                                    <li class="selected">
                                         <img src="/assets/files/1.png" alt="" />
-                                    </div>
-                                    <div class="selected">
-                                        <div class="selected-indicator">
-                                            <i class="icon-check"></i>
-                                        </div>
+                                    </li>
+                                    <li class="selected">
                                         <img src="/assets/files/2.png" alt="" />
-                                    </div>
-                                    <div>
+                                    </li>
+                                    <li>
                                         <img src="/assets/files/3.png" alt="" />
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </section>
                         <button class="drawer-toggle">
@@ -157,6 +171,7 @@
             </section>
         </div>
     </div>
-    <link rel="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" media="(max-width: 991px)" href="/css_min/modules/page-dt/page-dt-mobile.min.css" />
 </body>
 </html>
