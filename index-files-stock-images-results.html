@@ -17,27 +17,41 @@
                 </a>
             </div>
             <div class="right">
-                <div class="desktop-menu">
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-save"></i>Save / Load Design
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-download"></i>Download
-                    </button>
-                    <button class="site-btn-default site-top-nav-button">
-                        <i class="icon-share"></i>Share
-                    </button>
-                    <button class="site-btn-primary">Continue</button>
-                    <button class="site-btn-default site-btn-extra-options"><span></span></button>
-                </div>
-                <div class="mobile-menu">
-                    <button class="burger-menu-toggle">
-                        <i class="icon-burger"></i>
-                    </button>
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu open">
+                    <button class="burger-menu-toggle"></button>
                     <div class="mobile-menu-dropdown">
                         <ul>
                             <li>
-                                <button>
+                                <button class="site-btn-save">
                                     Save / Load Design
                                 </button>
                             </li>
@@ -130,92 +144,58 @@
                                             <i class="icon-search"></i>
                                         </div>
                                         
-                                        <h4>Recently Used</h4>
-                                        <div class="comp-dynamic-photo-grid">
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/recent-1.png" alt="" />
-                                            </div>
-                                            <div class="selected">
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/recent-2.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <h4>Popular Searches</h4>
-                                        <div class="comp-dynamic-photo-grid">
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular1.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular2.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular3.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular4.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular5.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular6.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular7.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular8.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular9.png" alt="" />
-                                            </div>
-                                            <div>
-                                                <div class="selected-indicator">
-                                                    <i class="icon-check"></i>
-                                                </div>
-                                                <img src="/assets/files/popular10.png" alt="" />
-                                            </div>
-                                        </div>
+                                        <section class="stock-images-pane-scrolling-section">
+                                            <h4>Recently Used</h4>
+                                            <ul class="comp-dynamic-photo-grid">
+                                                <li>                                                
+                                                    <img src="/assets/files/recent-1.png" alt="" />
+                                                </li>
+                                                <li class="selected">
+                                                    <img src="/assets/files/recent-2.png" alt="" />
+                                                </li>
+                                            </ul>
+                                            <h4>Popular Searches</h4>
+                                            <ul class="comp-dynamic-photo-grid">
+                                                <li>
+                                                    <img src="/assets/files/popular1.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular2.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular3.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular4.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular5.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular6.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular7.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular8.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular9.png" alt="" />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/files/popular10.png" alt="" />
+                                                </li>
+                                            </ul>
+                                        </section>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <button class="drawer-toggle">
-                            <i class="icon-drawer-toggle"></i>
-                        </button>
                     </div>
+                    <button class="drawer-toggle">
+                        <i class="icon-drawer-toggle"></i>
+                    </button>
                 </div>
             </div>
             <section class="workspace-section">
