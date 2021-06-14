@@ -1,9 +1,9 @@
 .comp-dynamic-photo-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 6px;
-    grid-auto-flow: row dense;
-    
+    grid-template-columns: repeat(auto-fill, minmax(40%,1fr));
+    grid-gap: 3px;
+    grid-auto-rows: 2px;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -11,15 +11,17 @@
     > li {
         margin-bottom: 5.08px;
         position: relative;
-        border: 3px solid transparent;
-
+        
         img {
             max-width: 100%;
             display: block;
+            border: 3px solid transparent;
         }
 
         &.selected {
-            border-color: @thirdBackgroundColor;
+            img {
+                border-color: @thirdBackgroundColor;
+            }
             &:before {
                 content: "";
                 height: 24px;
