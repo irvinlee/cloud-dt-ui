@@ -1,7 +1,7 @@
-@import "../../variables.less";
+@import "../../mixins.less";
 
 .site-btn-primary {
-    &:extend(.site-btn-base);
+    .site-btn-base();
     background-color: @thirdBackgroundColor;
     color: @secondaryBackgroundColor;
     font-weight: bold;
