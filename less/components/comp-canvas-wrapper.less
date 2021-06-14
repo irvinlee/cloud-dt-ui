@@ -9,6 +9,46 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    .canvas-controls {
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 14.76px);
+
+        .page-list {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+
+            li {
+                margin-right: 12px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .zoom-controls {
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+
+            button {
+                width: 20.94px;
+                height: 20.94px;
+                border: none;
+            }
+            .zoom-in {
+                background: url('/assets/zoom-in.svg') center center no-repeat transparent;
+                margin-right: 13.06px;
+            }
+            .zoom-out {
+                background: url('/assets/zoom-out.svg') center center no-repeat transparent;
+            }
+        }
+    }
+
     // we probably won't need this since this will be handled by the DT itself.. 
     // but I'll just put this here just in case...
     .canvas-element {
