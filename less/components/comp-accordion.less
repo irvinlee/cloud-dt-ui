@@ -1,0 +1,38 @@
+.comp-accordion {
+    > li {
+        margin-bottom: 16px;
+
+        .accordion-header {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: bold;
+            border: none;
+            text-align: left;
+            padding: 8px 12px;
+            background: url('/assets/plus.svg') calc(100% - 12.25px) center no-repeat @btnDefaultBgColor;
+        }
+
+        .accordion-body {
+            position: absolute;
+            left: 99999px;
+            padding: 17px 8px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height ease-in-out 0.3s;
+        }
+
+        &.open {
+            .accordion-header {
+                background-image: url('/assets/minus.svg');
+            }
+
+            .accordion-body {
+                position: static;
+                max-height: 500px;
+                overflow: scroll;
+            }
+        }
+    }
+}

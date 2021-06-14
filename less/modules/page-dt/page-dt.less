@@ -6,6 +6,14 @@
     text-align: center;
     color: @btnDefaultFontColor;
 
+    div, section {
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
     .page-content {
         background-color: @pageContentBgColor;
         position: relative;
@@ -390,6 +398,15 @@
                     max-height: calc(100% - 15px);
                     max-width: calc(100% - 15px);
                 }
+            }
+        }
+    }
+
+    .background-drawer {
+        .accordion-body {
+            .comp-fixed-column-list {
+                column-gap: 18px;
+                row-gap: 26.37px;
             }
         }
     }

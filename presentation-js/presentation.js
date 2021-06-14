@@ -26,5 +26,14 @@
         $(document).on('click', '.add-text-options button', function() {
             document.location.href = '/index-text-with-selected-element.html';
         });
+
+        $(document).on('click', '.accordion-header', function() {
+            var parent = $(this).parent();
+            if(parent.hasClass('open')) {
+                parent.removeClass('open');
+            } else {
+                parent.addClass('open');
+            }
+        });
     }
 )(jQuery);
