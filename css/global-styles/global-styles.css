@@ -12,7 +12,7 @@ i {
     display: inline-block;
 }
 
-div, header, section {
+div, header, section, textarea {
     box-sizing: border-box;
 }
 

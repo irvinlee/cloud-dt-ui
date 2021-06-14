@@ -22,5 +22,9 @@
                 }
             }
         });
+
+        $(document).on('click', '.add-text-options button', function() {
+            document.location.href = '/index-text-with-selected-element.html';
+        });
     }
 )(jQuery);

@@ -1,0 +1,49 @@
+.comp-element-operations-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 23.5px;
+    row-gap: 25.4px;
+
+    button {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        outline: none !important;
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+        width: 100%;
+        padding: 30.06px 0 0;
+        color: @btnDefaultFontColor;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        &.btn-bring-to-front {
+            background-image: url('/assets/bring-to-front.svg');
+        }
+        &.btn-bring-forward {
+            background-image: url('/assets/bring-forward.svg');
+        }
+        &.btn-duplicate {
+            background-image: url('/assets/duplicate.svg');
+        }
+        &.btn-send-to-back {
+            background-image: url('/assets/send-to-back.svg');
+        }
+        &.btn-send-backward {
+            background-image: url('/assets/send-backward.svg');
+        }
+        &.btn-delete {
+            background-image: url('/assets/delete.svg');
+        }
+        &.btn-crop {
+            background-image: url('/assets/crop.svg');
+        }
+        &.btn-rotate {
+            background-image: url('/assets/rotate.svg');
+        }
+        &.btn-lock {
+            background-image: url('/assets/lock.svg');
+        }
+    }
+}

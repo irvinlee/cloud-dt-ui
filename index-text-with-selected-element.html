@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tool</title>
+    <link rel="stylesheet" href="/css/global-styles/global-styles.css" />
+    <!-- for presentation purposes only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- for presentation purposes only-->
+</head>
+<body class="page-cloud-dt">
+    <header>
+        <div class="inner-wrapper">
+            <div class="left">
+                <a class="brand" href="/">
+                    <img src="/assets/uprinting-logo.svg" alt="UPrinting" />
+                </a>
+            </div>
+            <div class="right">
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu">
+                    <button class="burger-menu-toggle"></button>
+                    <div class="mobile-menu-dropdown">
+                        <ul>
+                            <li>
+                                <button class="site-btn-save">
+                                    Save / Load Design
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Download
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Share
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Continue
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="inner-wrapper">
+            <div class="left-nav">
+                <ul class="menu-item-list">
+                    <li>
+                        <a class="menu-item templates" href="/index-templates.html">
+                            Templates
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item logo" href="/index-logo.html">
+                            Logo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item files" href="/index-files.html">
+                            Files
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item text active" href="/index-text.html">
+                            Text
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item elements" href="/index-elements.html">
+                            Elements
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item background" href="/index-background.html">
+                            Background
+                        </a>
+                    </li>
+                    <li>
+                        <hr />
+                    </li>
+                    <li>
+                        <div class="undo-redo">
+                            <button class="site-btn-undo" disabled>
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                            <button class="site-btn-redo">
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="comp-drawer text-settings-drawer open">
+                    <div class="drawer-inner-wrapper">
+                        <h2 class="drawer-title">Text Settings</h2>
+                        
+                        <ul class="comp-element-operations-list">
+                            <li>
+                                <button class="btn-bring-to-front">
+                                    Bring to front
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-bring-forward">
+                                    Bring forward
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-duplicate">
+                                    Duplicate
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-send-to-back">
+                                    Send to Back
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-send-backward">
+                                    Send Backward
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-delete">
+                                    Delete
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-crop">
+                                    Crop
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-rotate">
+                                    Rotate
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-lock">
+                                    Lock
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="edit-text-input">
+                            <label for="txt-edit-text">Edit Text</label>
+                            <textarea id="txt-edit-text">Add Heading</textarea>
+                        </div>
+                        <div class="text-formatting-options">
+                            <div class="font-family-input">
+                                <div class="option-label">
+                                    Font Family
+                                </div>
+                                <div>
+                                    <div class="comp-custom-dropdown">
+                                        <select>
+                                            <option>Arial</option>
+                                            <option>Open Sans</option>
+                                            <option>Lato</option>
+                                            <option>Times New Roman</option>
+                                            <option>Tahoma</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="font-size-input">
+                                <div class="option-label">
+                                    Font Family
+                                </div>
+                                <div>
+                                    <div class="comp-custom-dropdown">
+                                        <select>
+                                            <option value="48">48</option>
+                                            <option value="52" selected>52</option>
+                                            <option value="56">56</option>
+                                            <option value="60">60</option>
+                                            <option value="64">64</option>
+                                            <option value="68">68</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-color-input">
+                                <div class="option-label">
+                                    Text Color
+                                </div>
+                                <div>
+                                    <!-- assumiing the background-color will be set via JS -->
+                                    <button class="site-btn-color-picker" style="background-color: #333333"></button>
+                                </div>
+                            </div>
+
+                            <div class="text-decoration-input">
+                                <div class="option-label">
+                                    Text Decoration
+                                </div>
+                                <div>
+                                    <ul class="text-settings-option-list">
+                                        <li>
+                                            <button class="btn-bold active"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-italic"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-underline"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="text-alignment-input">
+                                <div class="option-label">
+                                    Alignment
+                                </div>
+                                <div>
+                                    <ul class="text-settings-option-list">
+                                        <li>
+                                            <button class="btn-align-left active"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-align-center"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-align-right"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-align-justify"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="text-v-alignment-input">
+                                <div class="option-label">
+                                    VAlignment
+                                </div>
+                                <div>
+                                    <ul class="text-settings-option-list">
+                                        <li>
+                                            <button class="btn-v-align-top active"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-v-align-center"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-v-align-bottom"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="opacity-slider-input slider-input">
+                                <div class="option-label">
+                                    Opacity
+                                </div>
+                                <div class="slider-wrapper">
+                                    <div class="comp-slider">
+                                        <div class="slider-line value-line" style="width: 100%">
+                                            <!-- the width of this div will be set via JS -->
+                                        </div>
+                                        <div class="slider-line slider-track"></div>
+                                        <div class="slider-handle" style="left: 100%">
+                                            <!-- left value will be set via JS -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-value">
+                                    100%
+                                </div>
+                            </div>
+
+                            <div class="line-height-slider-input slider-input">
+                                <div class="option-label">
+                                    Line Height
+                                </div>
+                                <div class="slider-wrapper">
+                                    <div class="comp-slider disabled">
+                                        <div class="slider-line value-line" style="width: 100%">
+                                            <!-- the width of this div will be set via JS -->
+                                        </div>
+                                        <div class="slider-line slider-track"></div>
+                                        <div class="slider-handle" style="left: 1%">
+                                            <!-- left value will be set via JS -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-value">
+                                    1
+                                </div>
+                            </div>
+
+                            <div class="spacing-slider-input slider-input">
+                                <div class="option-label">
+                                    Spacing
+                                </div>
+                                <div class="slider-wrapper">
+                                    <div class="comp-slider disabled">
+                                        <div class="slider-line value-line" style="width: 100%">
+                                            <!-- the width of this div will be set via JS -->
+                                        </div>
+                                        <div class="slider-line slider-track"></div>
+                                        <div class="slider-handle" style="left: 0%">
+                                            <!-- left value will be set via JS -->
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="slider-value">
+                                    0
+                                </div>                            
+                            </div>
+                        </section>
+                        </div>
+                    </div>
+                    <button class="drawer-toggle">
+                        <i class="icon-drawer-toggle"></i>
+                    </button>
+                </div>
+            </div>
+            <section class="workspace-section">
+                <div class="comp-canvas-wrapper">
+                    <!-- for presentation purposes only-->
+                    <div class="presentation-canvas" style="height: 100%; width: 100%; position: relative;">
+                        <div class="canvas-element selected" style="top: 22.82px; left: 33.6px">
+                            <button class="mouse-handle top-left"></button>
+                            <button class="mouse-handle top-right"></button>
+                            <button class="mouse-handle bottom-left"></button>
+                            <button class="mouse-handle bottom-right"></button>
+                            <a href="#" style="font-size: 64px; font-weight: bold; line-height: 77px; color: black; letter-spacing: 0.5px; display: block; padding: 26px 21px;">
+                                Add Heading
+                            </a>
+                        </div>
+                    </div>
+                    <!-- for presentation purposes only-->
+                </div>
+            </section>
+        </div>
+    </div>
+    <link rel="stylesheet" property="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" media="(max-width: 991px)" href="/css_min/modules/page-dt/page-dt-mobile.min.css" />
+    <!-- for presentation purposes only-->
+    <script src="/presentation-js/presentation.js"></script>
+    <!-- for presentation purposes only-->
+</body>
+</html>
