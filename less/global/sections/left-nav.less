@@ -1,7 +1,7 @@
 @import "../../variables.less";
 
 .left-nav {
-    background: linear-gradient(180deg, @leftNavGradientTop 0%, @leftNavGradientBottom 100%);
+    background: linear-gradient(180deg, @thirdBackgroundColor 0%, @fourthBackgroundColor 100%);
     height: 100%;
     width: 88px;
     display: flex;
@@ -45,7 +45,7 @@
         width: 100%;
         padding: 56px 0 24px;
         background-color: transparent;
-        color: @leftNavMenuItemTextColor;
+        color: @secondaryBackgroundColor;
         cursor: pointer;
         font-size: 12px;
         line-height: 16.34px;
@@ -93,12 +93,12 @@
         }
 
         &:focus, &:hover {
-            color: @leftNavMenuItemTextColor;
+            color: @secondaryBackgroundColor;
         }
 
         &.active {
             background-color: white;
-            color: @leftNavMenuItemActiveTextColor;
+            color: @btnDefaultFontColor;
 
             &.templates {
                 background-image: url("/assets/templates-active.svg");
