@@ -30,20 +30,19 @@ header {
         position: relative;
         z-index: 999;
         padding-top: 4.44px;
-
+        
         .mobile-menu-dropdown {
             background-color: white;
             max-height: 0;
-            transition: max-height ease-in-out 0.25s;
+            transition: max-height ease-in-out 0.35s;
             position: absolute;
-            top: calc(100% + 18px);
+            top: -999999px;
             right: 0;
             overflow: hidden;
             border-left: 1px @headerBorderColor solid;
             box-shadow: 1px 1px 3px @headerBorderColor;
-            padding-left: 10px;
-            padding-right: 10px;
-            
+            padding: 10px;
+
             ul {
                 padding: 0;
                 margin: 0;
@@ -77,7 +76,7 @@ header {
 
         &.open {
             .mobile-menu-dropdown {
-                padding: 10px;
+                top: calc(100% + 18px);
                 max-height: 400px;
             }
         }
