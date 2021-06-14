@@ -26,6 +26,28 @@
 
         a {
             position: relative;
+
+            &:before, &:after {
+                content: "";                
+                &:extend(.mouse-handle);
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+
+            &:right {
+                left: auto;
+                right: 0;
+            }
         }
     }
+}
+
+.mouse-handle {
+    border: @selectedCanvasElementBorderColor 1px solid;
+    background-color: @secondaryBackgroundColor;
+    height: 13.75px;
+    width: 13.75px;
+    border-radius: 50% 50%;
 }
