@@ -1,0 +1,31 @@
+.comp-canvas-wrapper {
+    background-color: @secondaryBackgroundColor;
+    width: 784.64px;
+    height: 439.11px;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid @canvasWrapperBorderColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // we probably won't need this since this will be handled by the DT itself.. 
+    // but I'll just put this here just in case...
+    .canvas-element {
+        display: block;
+        position: absolute;
+        border: transparent 2px solid;
+
+        &.selected {
+            border-color: @selectedCanvasElementBorderColor;
+        }
+
+        a, img {
+            display: block;
+        }
+
+        a {
+            position: relative;
+        }
+    }
+}
