@@ -11,5 +11,16 @@
                 }
             }
         });
+
+        $(document).on('click', '.burger-menu-toggle', function() {
+            var parent = $(this).parents('.mobile-menu:first');
+            if(parent) {
+                if(parent.hasClass('open')) {
+                    parent.removeClass('open');
+                } else {
+                    parent.addClass('open');
+                }
+            }
+        });
     }
 )(jQuery);
