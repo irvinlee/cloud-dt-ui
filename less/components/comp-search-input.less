@@ -2,8 +2,8 @@
     width: 100%;
     border: @headerBorderColor 1px solid;
     position: relative;
-    padding: 8px;
-    background: url('/assets/search.svg') calc(100% - 8.53px) center no-repeat transparent;
+    padding: 8px 32.47px 8px 8px;
+    background: url('/assets/search.svg') calc(100% - 8.53px) center no-repeat @secondaryBackgroundColor;
 
     input {
         border: none;
@@ -14,7 +14,9 @@
         font-size: 16px;
         line-height: 19px;
         font-family: @inputFontFamily;
-        
+        background-color: transparent;
+        width: 100%;
+
         &::placeholder {
             color: @canvasWrapperBorderColor;
         }

@@ -229,14 +229,14 @@
         li {
             border: @headerBorderColor 1px solid;
             height: 139px;
-            width: 139px;
-            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                max-height: calc(100% - 15px);
+                max-width: calc(100% - 15px);
             }
         }
     }
