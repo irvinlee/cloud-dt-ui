@@ -1,0 +1,30 @@
+.comp-custom-checkbox {
+    label {
+        position: relative;
+        overflow: hidden;
+        padding-left: 24px;
+        cursor: pointer;
+
+        .check-indicator {
+            display: block;
+            height: 16px;
+            width: 16px;
+            border: @pageButtonFontColor 1px solid;
+            position: absolute;
+            left: 0;
+        }
+
+        input {
+            position: absolute;
+            left: -99999px;
+
+            &:checked {
+                ~ .check-indicator {
+                    background: url('/assets/check.svg') center center no-repeat @thirdBackgroundColor;
+                    background-size: calc(100% - 3.25px);
+                    border-color: @thirdBackgroundColor;
+                }
+            }
+        }
+    }
+}
