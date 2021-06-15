@@ -1,0 +1,64 @@
+.comp-share-options-list {
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 24px;
+
+    li {
+        width: 100%;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: inherit;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        text-align: center;
+        width: 100%;
+        height: 64px;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        &.facebook {
+            background-image: url('/assets/fb.svg');
+        }
+
+        &.twitter {
+            background-image: url('/assets/twitter.svg');
+        }
+
+        &.instagram {
+            background-image: url('/assets/instagram.svg');
+        }
+
+        &.linkedin {
+            background-image: url('/assets/linkedin.svg');
+        }
+
+        &.email {
+            background-image: url('/assets/email.svg');
+        }
+
+        &.embed {
+            background-image: url('/assets/embed.svg');
+        }
+
+        &.gdrive {
+            background-image: url('/assets/gdrive.svg');
+        }
+
+        &.dropbox {
+            background-image: url('/assets/dropbox.svg');
+        }
+
+        &.onedrive {
+            background-image: url('/assets/onedrive.svg');
+        }
+    }
+}
