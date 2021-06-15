@@ -27,6 +27,14 @@
             document.location.href = '/index-text-with-selected-element.html';
         });
 
+        $(document).on('click', '.site-btn-extra-options', function(){
+            document.location.href = '/index-design-options.html';
+        });
+
+        $(document).on('click', '.popup-close-btn', function() {
+            $(this).closest('.open').removeClass('open');
+        });
+
         $(document).on('click', '.accordion-header', function() {
             var parent = $(this).parent();
             if(parent.hasClass('open')) {

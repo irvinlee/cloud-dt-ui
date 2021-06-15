@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tool</title>
+    <link rel="stylesheet" href="/css/global-styles/global-styles.css" />
+    <!-- for presentation purposes only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- for presentation purposes only-->
+</head>
+<body class="page-cloud-dt">
+    <header>
+        <div class="inner-wrapper">
+            <div class="left">
+                <a class="brand" href="/">
+                    <img src="/assets/uprinting-logo.svg" alt="UPrinting" />
+                </a>
+            </div>
+            <div class="right">
+                <ul class="desktop-menu">
+                    <li>
+                        <button class="site-btn-save">
+                            <span>
+                                Save / Load Design
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-download">
+                            <span>
+                                Download
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-share">
+                            <span>
+                                Share
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="site-btn-primary">Continue</button>
+                    </li>
+                    <li>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
+                    </li>
+                </ul>
+                <div class="mobile-menu">
+                    <button class="burger-menu-toggle"></button>
+                    <div class="mobile-menu-dropdown">
+                        <ul>
+                            <li>
+                                <button class="site-btn-save">
+                                    Save / Load Design
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Download
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Share
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    Continue
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="inner-wrapper">
+            <div class="left-nav">
+                <ul class="menu-item-list">
+                    <li>
+                        <a class="menu-item templates" href="/index-templates.html">
+                            Templates
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item logo" href="/index-logo.html">
+                            Logo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item files" href="/index-files.html">
+                            Files
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item text" href="/index-text.html">
+                            Text
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item elements" href="/index-elements.html">
+                            Elements
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item background" href="/index-background.html">
+                            Background
+                        </a>
+                    </li>
+                    <li>
+                        <hr />
+                    </li>
+                    <li>
+                        <div class="undo-redo">
+                            <button class="site-btn-undo" disabled>
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                            <button class="site-btn-redo">
+                                <i class="icon-undo-redo"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="comp-drawer">
+                    <div class="drawer-inner-wrapper">
+                        <h2 class="drawer-title">Templates</h2>
+                        <div class="comp-scrolling-pane">
+                            <div class="scrolling-pane-inner-wrapper">
+                                <button class="site-btn-default">Minimalist</button>
+                                <button class="site-btn-default">Abstract</button>
+                                <button class="site-btn-default active">Corporate</button>
+                                <button class="site-btn-default">Food &amp; Bevarage</button>
+                            </div>
+                            <button class="btn-prev"><i class="icon-chevron-right"></i></button>
+                            <button class="btn-next active"><i class="icon-chevron-right"></i></button>
+                        </div>
+                        <section class="option-list-section">
+                            <ul class="comp-fixed-column-list">
+                                <li>
+                                    <img src="/assets/templates/1.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/2.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/3.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/4.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/5.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/6.png" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/templates/7.png" alt=""/>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <button class="drawer-toggle">
+                        <i class="icon-drawer-toggle"></i>
+                    </button>
+                </div>
+            </div>
+            <section class="workspace-section">
+                <div class="comp-canvas-wrapper">
+                </div>
+            </section>
+            <div class="comp-popup-box open other-design-options">
+                <div class="popup-box-inner-wrapper">
+                    <h2>Business Card</h2>
+                    <hr />
+                    <ul class="design-info">
+                        <li>
+                            Size: 2” x 3.5”
+                        </li>
+                        <li>
+                            Rounded Corners: No
+                        </li>
+                        <li>
+                            Paper Type: 14pt Cardstock Gloss
+                        </li>
+                        <li>
+                            Printed Side: Front Only
+                        </li>
+                        <li>
+                            Bundling: None
+                        </li>
+                        <li>
+                            Quantity: 1000
+                        </li>
+                        <li>
+                            Printing Time: 3 Business Days
+                        </li>
+                    </ul>
+
+                    <h3>Other Design Assistance</h3>
+                    <hr />
+                    <ul class="design-assistance-list">
+                        <li>
+                            <div class="comp-custom-checkbox">
+                                <label>
+                                    <input type="checkbox" value="bleed" />                                
+                                    Bleed
+                                </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="comp-custom-checkbox">
+                                <label>
+                                    <input type="checkbox" value="bleed" />                                
+                                    Grid
+                                </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="comp-custom-checkbox">
+                                <label>
+                                    <input type="checkbox" value="bleed" />                                
+                                    3D
+                                </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="comp-custom-checkbox">
+                                <label>
+                                    <input type="checkbox" value="bleed" />                                
+                                    Magnetic Alignment
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="popup-close-btn"></button>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" property="stylesheet" href="/css_min/modules/page-dt/page-dt.min.css" />
+    <link rel="stylesheet" property="stylesheet" media="(max-width: 991px)" href="/css_min/modules/page-dt/page-dt-mobile.min.css" />
+    <!-- for presentation purposes only-->
+    <script src="/presentation-js/presentation.js"></script>
+    <!-- for presentation purposes only-->
+</body>
+</html>

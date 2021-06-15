@@ -1,0 +1,65 @@
+.comp-popup-box {
+    position: absolute;
+    z-index: 997;
+    width: 0;
+    height: 100%;
+    right: 0px;    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    overflow: hidden;
+    transition: width ease-in-out 0.3s;
+    
+    &.open {
+        width: 332px;
+    }
+
+    .popup-box-inner-wrapper {
+        padding: 24px 16px;
+    }
+
+    .popup-close-btn {
+        border: none;
+        background: url('/assets/close-modal.svg') center center no-repeat transparent;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 100%;
+        padding-bottom: 23.47px;
+    }
+
+    h3 {
+        padding-bottom: 16px;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: @headerBorderColor;
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .design-info, .design-assistance-list{
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 19px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
