@@ -21,7 +21,7 @@
             <div class="right">
                 <ul class="desktop-menu">
                     <li>
-                        <button class="site-btn-save">
+                        <button class="site-btn-save active">
                             <span>
                                 Save / Load Design
                             </span>
@@ -45,7 +45,7 @@
                         <button class="site-btn-primary">Continue</button>
                     </li>
                     <li>
-                        <button class="site-btn-default site-btn-extra-options active"><span></span></button>
+                        <button class="site-btn-default site-btn-extra-options"><span></span></button>
                     </li>
                 </ul>
                 <div class="mobile-menu">
@@ -175,77 +175,42 @@
                 <div class="comp-canvas-wrapper">
                 </div>
             </section>
-            <div class="comp-popup-box open other-design-options">
+            <div class="comp-popup-box open save-design">
                 <div class="popup-box-inner-wrapper">
-                    <h2>Business Card</h2>
+                    <h2>Save Design</h2>
                     <hr />
-                    <ul class="design-info">
-                        <li>
-                            Size: 2” x 3.5”
-                        </li>
-                        <li>
-                            Rounded Corners: No
-                        </li>
-                        <li>
-                            Paper Type: 14pt Cardstock Gloss
-                        </li>
-                        <li>
-                            Printed Side: Front Only
-                        </li>
-                        <li>
-                            Bundling: None
-                        </li>
-                        <li>
-                            Quantity: 1000
-                        </li>
-                        <li>
-                            Printing Time: 3 Business Days
-                        </li>
-                    </ul>
+                    <div class="save-design-form">
+                        <div>
+                            <label for="txt-design-name">Design Name</label>
+                            <input type="text" id="txt-design-name" placeholder="Insert Design Name"/>
+                        </div>
+                        <div>
+                            <button class="site-btn-submit">Save Design</button>
+                        </div>
+                    </div>
 
-                    <h3>Other Design Assistance</h3>
-                    <hr />
-                    <ul class="design-assistance-list">
-                        <li>
-                            <div class="comp-custom-checkbox">
-                                <label>
-                                    <input type="checkbox" value="bleed" />
-                                    <span class="check-indicator"></span>
-                                    Bleed
-                                </label>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="comp-custom-checkbox">
-                                <label>
-                                    <input type="checkbox" value="bleed" />
-                                    <span class="check-indicator"></span>
-                                    Grid
-                                </label>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="comp-custom-checkbox">
-                                <label>
-                                    <input type="checkbox" value="bleed" />
-                                    <span class="check-indicator"></span>
-                                    3D
-                                </label>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="comp-custom-checkbox">
-                                <label>
-                                    <input type="checkbox" value="bleed" />
-                                    <span class="check-indicator"></span>
-                                    Magnetic Alignment
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="saved-designs-list-wrapper">
+                        <h3>Load Design</h3>
+                        <hr />
+                        <ul class="saved-designs-list">
+                            <li>
+                                My First Project
+                                <button>Load</button>
+                            </li>
+                            <li>
+                                Brochure Tri Fold
+                                <button>Load</button>
+                            </li>
+                            <li>
+                                Wedding Invitation
+                                <button>Load</button>
+                            </li>
+                            <li>
+                                Catalog
+                                <button>Load</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <button class="popup-close-btn"></button>
             </div>

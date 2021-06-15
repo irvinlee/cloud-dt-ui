@@ -31,6 +31,10 @@
             document.location.href = '/index-design-options.html';
         });
 
+        $(document).on('click', '.site-btn-save', function(){
+            document.location.href = '/index-save-design-popup.html';
+        });
+        
         $(document).on('click', '.popup-close-btn', function() {
             $(this).closest('.open').removeClass('open');
         });

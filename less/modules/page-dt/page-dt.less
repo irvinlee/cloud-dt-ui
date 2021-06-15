@@ -410,4 +410,86 @@
             }
         }
     }
+
+    .comp-popup-box {
+        &.save-design {
+            h2 {
+                padding-bottom: 16px;
+            }
+
+            .save-design-form {
+                padding: 24px 0 0;
+
+                > div {
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }                    
+                }
+                
+                label, input[type="text"]{
+                    display: block;
+                    width: 100%;                    
+                }
+
+                label {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    margin-bottom: 12px;
+                }
+
+                input[type="text"] {
+                    font-family: @inputFontFamily;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0.25px;
+                    padding: 0 16px;
+                    border: @headerBorderColor 1px solid;
+                    outline: none;
+                    height: 40px;
+
+                    &::placeholder {
+                        color: @canvasWrapperBorderColor;
+                    }
+                }
+            }
+        }
+
+        .saved-designs-list-wrapper {
+            padding-top: 52px;
+
+            .saved-designs-list {
+                margin: 30.5px 0;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    button {
+                        border: none;
+                        background-color: @btnDefaultBgColor;
+                        border-radius: 3px;
+                        padding: 4px 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
 }
