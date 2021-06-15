@@ -416,45 +416,64 @@
             h2 {
                 padding-bottom: 16px;
             }
+        }
 
-            .save-design-form {
-                padding: 24px 0 0;
+        .save-form {
+            padding: 24px 0 0;
 
-                > div {
-                    margin-bottom: 12px;
+            > div {
+                margin-bottom: 12px;
 
-                    &:last-child {
-                        margin-bottom: 0;
-                    }                    
+                &:last-child {
+                    margin-bottom: 0;
+                }                    
+            }
+            
+            label, input[type="text"]{
+                display: block;
+                width: 100%;                    
+            }
+
+            label {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                margin-bottom: 12px;
+            }
+
+            input[type="text"] {
+                font-family: @inputFontFamily;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.25px;
+                padding: 0 16px;
+                border: @headerBorderColor 1px solid;
+                outline: none;
+                height: 40px;
+
+                &::placeholder {
+                    color: @canvasWrapperBorderColor;
                 }
-                
-                label, input[type="text"]{
-                    display: block;
-                    width: 100%;                    
-                }
+            }
 
-                label {
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 19px;
-                    margin-bottom: 12px;
-                }
+            .comp-custom-dropdown {
+                height: 40px;
+                border-color: @headerBorderColor;
 
-                input[type="text"] {
-                    font-family: @inputFontFamily;
+                select {
+                    padding-left: 16px;
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 150%;
                     letter-spacing: 0.25px;
-                    padding: 0 16px;
-                    border: @headerBorderColor 1px solid;
-                    outline: none;
-                    height: 40px;
+                }
+            }
 
-                    &::placeholder {
-                        color: @canvasWrapperBorderColor;
-                    }
+            &.download-project-form {
+                .button-row {
+                    padding-top: 12px;
                 }
             }
         }

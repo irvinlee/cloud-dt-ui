@@ -35,6 +35,14 @@
             document.location.href = '/index-save-design-popup.html';
         });
         
+        $(document).on('click', '.site-btn-download', function(){
+            document.location.href = '/index-download-popup.html';
+        });
+        
+        $(document).on('click', '.site-btn-share', function(){
+            document.location.href = '/index-share-popup.html';
+        });
+        
         $(document).on('click', '.popup-close-btn', function() {
             $(this).closest('.open').removeClass('open');
         });

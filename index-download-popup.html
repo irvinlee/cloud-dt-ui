@@ -21,14 +21,14 @@
             <div class="right">
                 <ul class="desktop-menu">
                     <li>
-                        <button class="site-btn-save active">
+                        <button class="site-btn-save">
                             <span>
                                 Save / Load Design
                             </span>
                         </button>
                     </li>
                     <li>
-                        <button class="site-btn-download">
+                        <button class="site-btn-download active">
                             <span>
                                 Download
                             </span>
@@ -177,39 +177,36 @@
             </section>
             <div class="comp-popup-box open save-design">
                 <div class="popup-box-inner-wrapper">
-                    <h2>Save Design</h2>
+                    <h2>Download</h2>
                     <hr />
-                    <div class="save-design-form save-form">
+                    <div class="download-project-form save-form">
                         <div>
-                            <label for="txt-design-name">Design Name</label>
-                            <input type="text" id="txt-design-name" placeholder="Insert Design Name"/>
+                            <label for="txt-design-name">File Type</label>
+                            <div class="comp-custom-dropdown">
+                                <select>
+                                    <option>SVG</option>
+                                    <option>PNG</option>
+                                    <option selected>JPG</option>
+                                    <option>TIFF</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <button class="site-btn-submit">Save Design</button>
-                        </div>
-                    </div>
 
-                    <div class="saved-designs-list-wrapper">
-                        <h3>Load Design</h3>
-                        <hr />
-                        <ul class="saved-designs-list">
-                            <li>
-                                My First Project
-                                <button>Load</button>
-                            </li>
-                            <li>
-                                Brochure Tri Fold
-                                <button>Load</button>
-                            </li>
-                            <li>
-                                Wedding Invitation
-                                <button>Load</button>
-                            </li>
-                            <li>
-                                Catalog
-                                <button>Load</button>
-                            </li>
-                        </ul>
+                        <div>
+                            <label for="txt-design-name">Select Page</label>
+                            <div class="comp-custom-dropdown">
+                                <select>
+                                    <option>Page 1</option>
+                                    <option>Page 2/option>
+                                    <option selected>All Page</option>
+                                    <option>Page 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="button-row">
+                            <button class="site-btn-submit">Save Project</button>
+                        </div>
                     </div>
                 </div>
                 <button class="popup-close-btn"></button>
