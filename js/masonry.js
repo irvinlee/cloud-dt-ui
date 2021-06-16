@@ -12,3 +12,4 @@ function resizeGridItems(gridClassName){
 
 
 document.addEventListener('DOMContentLoaded', resizeGridItems('.comp-masonry-grid.fixed-columns'), false);
+document.addEventListener('resize', resizeGridItems('.comp-masonry-grid.fixed-columns'));
