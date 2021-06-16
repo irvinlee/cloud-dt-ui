@@ -35,8 +35,13 @@
     }
 
     .scrolling-pane-inner-wrapper {
-        display: grid;
-        grid-auto-flow: column;
-        column-gap: 8px;
+        display: flex;
+        li {
+            margin-right: 8px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
