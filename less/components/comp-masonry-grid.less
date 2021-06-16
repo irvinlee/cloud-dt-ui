@@ -1,0 +1,52 @@
+.comp-masonry-grid {
+    display: grid;
+
+    &.fixed-columns {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1px;
+        column-gap: 9px;
+        row-gap: 5px;
+        
+        li {
+            position: relative;
+            overflow: hidden;
+
+            > img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 98;
+            }
+        }
+    }
+
+    &.fixed-rows {
+        grid-template-columns: 1fr;
+        row-gap: 7px;
+    }
+
+    > li {
+        overflow: hidden;
+
+        img {
+            display: block;            
+        }
+
+        &.selected {
+            border: 3px solid @thirdBackgroundColor;
+            
+            &:before {
+                content: "";
+                height: 24px;
+                width: 24px;
+                border-radius: 50% 50%;
+                position: absolute;
+                top: 4px;
+                right: 11px;
+                z-index: 99;
+                background: url('/assets/check.svg') center center no-repeat @thirdBackgroundColor;
+            }
+        }
+    }
+}
