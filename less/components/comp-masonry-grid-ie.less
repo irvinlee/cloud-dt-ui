@@ -1,0 +1,22 @@
+.comp-masonry-grid {
+    display: block;
+    
+    &.fixed-columns {
+        column-count: 2;
+
+        li {
+            margin-bottom: 5.08px;
+
+            img {
+                position: static;
+            }
+        }
+    }
+
+    &.fixed-rows {
+        > li {
+            height: 94px;
+            margin-bottom: 7px;
+        }
+    }
+}
