@@ -1,28 +1,7 @@
 @media @mobileOnly {
-    .comp-masonry-grid {
-        &.fixed-columns {
-            grid-template-columns: 1fr;
-
-            li.selected {
-                border-width: 5px;
-            }
-        }
-
+    .comp-masonry-grid {        
         &.fixed-rows {
             display: block;
-            > li {
-                .row-wrapper {
-                    display: block;
-                    width: 100%;
-
-                    li {
-                        max-width: 100%;
-                        width: 100%;
-                        height: auto;
-                        margin-bottom: 7px;
-                    }
-                }
-            }
         }
     }
 }
