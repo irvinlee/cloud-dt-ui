@@ -1,0 +1,17 @@
+.comp-fixed-column-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 4px;
+        margin-bottom: 4px;
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+
+        &:nth-last-child(2), &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
